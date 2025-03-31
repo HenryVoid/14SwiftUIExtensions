@@ -13,3 +13,22 @@ extension View {
     return EmptyView()
   }
 }
+
+// example
+struct PrintExampleView: View {
+    let maka: String = "maka"
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("Hello, World!")
+            
+            Print(maka, "0")
+            // maka
+            // 0
+        }
+    }
+}
+
+
+#Preview {
+    ProjectSwiftUITests()
+}
